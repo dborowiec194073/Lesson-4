@@ -72,11 +72,9 @@ public class ShoppingCart {
      */
     public double getTotalPrice() {
         double total = 0.0;
-
         for (Product item : items) {
             total += item.getPrice();
         }
-
         return total;
     }
 

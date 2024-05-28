@@ -10,6 +10,7 @@ public class App extends Application {
         launch();
     }
 
+    @Override
     public void start(Stage primaryStage) {
         ArrayList<Product> products = Store.createStarterProducts();        
         ShoppingCartApp cart = new ShoppingCartApp(primaryStage, 500, 500, products);

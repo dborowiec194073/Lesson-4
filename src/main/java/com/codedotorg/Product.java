@@ -42,6 +42,7 @@ public class Product {
      * 
      * @return a string representation of the product, including its name and price.
      */
+    @Override
     public String toString() {
         return name + " - $" + price;
     }
