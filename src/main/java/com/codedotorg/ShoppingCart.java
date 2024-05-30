@@ -16,7 +16,7 @@ public class ShoppingCart {
      * Constructs a new ShoppingCart object with an empty list of items and a new ListView of Products.
      */
     public ShoppingCart() {
-        items = new ArrayList<Product>();
+        items = new ArrayList<>();
         itemsListView = new ListView<Product>();
     }
 

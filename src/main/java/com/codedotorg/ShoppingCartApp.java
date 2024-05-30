@@ -5,12 +5,12 @@ import java.util.Arrays;
 import java.util.List;
 
 import javafx.geometry.Insets;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import javafx.scene.Node;
-import javafx.scene.Scene;
 
 public class ShoppingCartApp {
 
@@ -24,6 +24,7 @@ public class ShoppingCartApp {
     private int height;
 
     /** The list of products */
+    @SuppressWarnings("unused")
     private ArrayList<Product> products;
 
     /** The label displaying the total price of all products */

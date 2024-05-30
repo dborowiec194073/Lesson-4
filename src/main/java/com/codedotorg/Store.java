@@ -65,7 +65,7 @@ public class Store {
      * @return ArrayList of Product objects
      */
     public static ArrayList<Product> createStarterProducts() {
-        ArrayList<Product> temp = new ArrayList<Product>();
+        ArrayList<Product> temp = new ArrayList<>();
 
         temp.add(new Product("Apple iPhone 13 Pro", 999.00));
         temp.add(new Product("Apple iPhone 13 Pro", 999.00));
