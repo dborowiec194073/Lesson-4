@@ -133,14 +133,15 @@ public class ShoppingCartApp {
      * @return the remove button
      */
     public Button createRemoveButton() {
-        Button tempButton = new Button("Remove from Cart");
+        Button tempButton2 = new Button("Remove from Cart");
 
-        tempButton.setOnAction(e -> {
+        tempButton2.setOnAction(event -> {
             logic.removeProductFromCart();
             totalLabel.setText(String.format("Total: $%.2f", logic.getNewTotal()));
+            System.out.println("event called");
         });
-
-        return tempButton;
+            System.out.println("createRemoveButton() called");
+        return tempButton2;
     }
 
 }

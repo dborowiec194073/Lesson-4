@@ -50,10 +50,12 @@ public class ShoppingCart {
     /**
      * Removes the selected product from the shopping cart.
      * 
-     * @param selectedProduct the product to be removed from the cart
+     * @param selectedProduct1 the product to be removed from the cart
      */
-    public void removeFromCart(Product selectedProduct) {
-        items.remove(selectedProduct);
+    public void removeFromCart(Product selectedProduct1) {
+        items.remove(selectedProduct1);
+        System.out.println("ShoppingCart.removeFromCart() called");
+        //NOT BEING CALLED FIND OUT WHY
     }
 
     /**

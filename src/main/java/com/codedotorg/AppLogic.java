@@ -65,12 +65,12 @@ public class AppLogic {
      */
     public void removeProductFromCart() {
         Product selectedProduct = store.getProductsListView().getSelectionModel().getSelectedItem();
-        if (selectedProduct != null) {
+        System.err.println("app logic called removeProductFromCart()");
             cart.removeFromCart(selectedProduct);
-            store.updateInventory(selectedProduct);
+            //store.updateInventory(selectedProduct);
             store.updateProductsListView();
             cart.updateItemsListView();
-        }
+        //NOT BEING CALLED FIND OUT WHY
     
     }
 
